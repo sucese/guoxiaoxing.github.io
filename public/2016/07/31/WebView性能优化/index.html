@@ -15,25 +15,19 @@
 
 
 
-<meta name="description" content="WebView性能优化作者: 郭嘉邮箱: guoxiaoxingv@163.com博客: https://guoxiaoxing.github.io/知乎: https://www.zhihu.com/people/allen-wells
-关于作者
-
-Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公司。爱技术、爱烹饪、爱小提琴、爱一切新鲜有趣的事物。人生格言: 不想当程序员">
+<meta name="description" content="本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:
+WebView基本用法WebView代码交互WebView性能优化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="郭嘉的技术博客">
-<meta property="og:url" content="http://yoursite.com/2016/07/31/WebView性能优化/index.html">
+<meta property="og:title" content="WebView性能优化">
+<meta property="og:url" content="https://guoxiaoxing.github.io/2016/07/31/WebView性能优化/index.html">
 <meta property="og:site_name" content="郭嘉的技术博客">
-<meta property="og:description" content="WebView性能优化作者: 郭嘉邮箱: guoxiaoxingv@163.com博客: https://guoxiaoxing.github.io/知乎: https://www.zhihu.com/people/allen-wells
-关于作者
-
-Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公司。爱技术、爱烹饪、爱小提琴、爱一切新鲜有趣的事物。人生格言: 不想当程序员">
-<meta property="og:updated_time" content="2016-07-31T09:43:44.000Z">
+<meta property="og:description" content="本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:
+WebView基本用法WebView代码交互WebView性能优化">
+<meta property="og:updated_time" content="2016-08-03T03:46:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="郭嘉的技术博客">
-<meta name="twitter:description" content="WebView性能优化作者: 郭嘉邮箱: guoxiaoxingv@163.com博客: https://guoxiaoxing.github.io/知乎: https://www.zhihu.com/people/allen-wells
-关于作者
-
-Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公司。爱技术、爱烹饪、爱小提琴、爱一切新鲜有趣的事物。人生格言: 不想当程序员">
+<meta name="twitter:title" content="WebView性能优化">
+<meta name="twitter:description" content="本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:
+WebView基本用法WebView代码交互WebView性能优化">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -65,7 +59,7 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>郭嘉的技术博客</title>
+<title>WebView性能优化 | 郭嘉的技术博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -276,7 +270,7 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
   
     <div class="article-meta">
       <a href="/2016/07/31/WebView性能优化/" class="article-date">
-      <time datetime="2016-07-31T09:43:44.000Z" itemprop="datePublished">2016-07-31</time>
+      <time datetime="2016-07-30T16:00:00.000Z" itemprop="datePublished">2016-07-31</time>
 </a>
 
 
@@ -287,10 +281,31 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      WebView性能优化
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="WebView性能优化"><a href="#WebView性能优化" class="headerlink" title="WebView性能优化"></a>WebView性能优化</h1><p>作者: 郭嘉<br>邮箱: guoxiaoxingv@163.com<br>博客: <a href="https://guoxiaoxing.github.io/" target="_blank" rel="external">https://guoxiaoxing.github.io/</a><br>知乎: <a href="https://www.zhihu.com/people/allen-wells" target="_blank" rel="external">https://www.zhihu.com/people/allen-wells</a></p>
+        <p>本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:</p>
+<p><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.md" target="_blank" rel="external">WebView基本用法</a><br><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E4%BB%A3%E7%A0%81%E4%BA%A4%E4%BA%92.md" target="_blank" rel="external">WebView代码交互</a><br><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md" target="_blank" rel="external">WebView性能优化</a></p>
+<a id="more"></a>
+<h1 id="WebView性能优化"><a href="#WebView性能优化" class="headerlink" title="WebView性能优化"></a>WebView性能优化</h1><p>作者: 郭嘉<br>邮箱: guoxiaoxingv@163.com<br>博客: <a href="https://guoxiaoxing.github.io/">https://guoxiaoxing.github.io/</a><br>知乎: <a href="https://www.zhihu.com/people/allen-wells" target="_blank" rel="external">https://www.zhihu.com/people/allen-wells</a></p>
 <p><strong>关于作者</strong></p>
 <blockquote>
 <p>Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公司。爱技术、爱烹饪、爱小提琴、爱一切新鲜有趣的事物。<br>人生格言: 不想当程序员的歌手不是好厨师。</p>
@@ -322,13 +337,13 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/07/31/WebView性能优化/"></a></p>
+        <p><span>本文标题:</span><a href="/2016/07/31/WebView性能优化/">WebView性能优化</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">郭嘉</a></p>
-        <p><span>发布时间:</span>2016-07-31, 17:43:44</p>
-        <p><span>最后更新:</span>2016-07-31, 17:43:44</p>
+        <p><span>发布时间:</span>2016-07-31, 00:00:00</p>
+        <p><span>最后更新:</span>2016-08-03, 11:46:23</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/07/31/WebView性能优化/" title="">http://yoursite.com/2016/07/31/WebView性能优化/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/07/31/WebView性能优化/　　作者: 郭嘉" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/31/WebView性能优化/" title="WebView性能优化">https://guoxiaoxing.github.io/2016/07/31/WebView性能优化/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://guoxiaoxing.github.io/2016/07/31/WebView性能优化/　　作者: 郭嘉" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -342,7 +357,7 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
         
             <div id="article-nav-newer" class="article-nav-title">
                 <a href="/2016/07/31/WebView基本用法/">
-                    
+                    WebView基本用法
                 </a>
             </div>
         
@@ -391,7 +406,7 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"　| 郭嘉的技术博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"WebView性能优化　| 郭嘉的技术博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -405,13 +420,32 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
 
 
     
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/07/31/WebView性能优化/" data-title="WebView性能优化" data-url="https://guoxiaoxing.github.io/2016/07/31/WebView性能优化/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"null"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
 
 
 
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/07/31/WebView基本用法/" title="上一篇: ">
+            <a href="/2016/07/31/WebView基本用法/" title="上一篇: WebView基本用法">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -423,7 +457,7 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView代码交互/">WebView代码交互</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView基本用法/">WebView基本用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView性能优化/">WebView性能优化</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/02/README/">README</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView代码交互/">WebView代码交互</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView基本用法/">WebView基本用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView性能优化/">WebView性能优化</a></li></ul>
 
 
 
@@ -467,22 +501,6 @@ Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公�
     </div>
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
 
 
 
