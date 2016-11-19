@@ -15,10 +15,10 @@ tags:
 
 # WebView基本用法
 
-作者: 郭嘉  
-邮箱: guoxiaoxingv@163.com  
-博客: https://guoxiaoxing.github.io/  
-知乎: https://www.zhihu.com/people/allen-wells
+作者: 郭彦南  
+邮箱: guoyannanv@163.com  
+博客: https://YannanGuo.github.io/  
+知乎: https://www.zhihu.com/people/YannanGuo
 
 **关于作者**
 
