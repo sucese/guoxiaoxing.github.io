@@ -16,18 +16,27 @@
 
 
 <meta name="description" content="本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:
-WebView基本用法WebView代码交互WebView性能优化">
+
+WebView三部曲：基本用法 
+WebView三部曲：代码交互 
+WebView三部曲：性能优化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WebView代码交互">
-<meta property="og:url" content="https://guoxiaoxing.github.io/2016/07/31/WebView代码交互/index.html">
+<meta property="og:title" content="WebView三部曲：代码交互">
+<meta property="og:url" content="https://guoxiaoxing.github.io/2016/07/31/WebView三部曲：代码交互/index.html">
 <meta property="og:site_name" content="郭孝星">
 <meta property="og:description" content="本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:
-WebView基本用法WebView代码交互WebView性能优化">
-<meta property="og:updated_time" content="2016-08-28T06:21:50.000Z">
+
+WebView三部曲：基本用法 
+WebView三部曲：代码交互 
+WebView三部曲：性能优化">
+<meta property="og:updated_time" content="2016-11-19T10:08:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WebView代码交互">
+<meta name="twitter:title" content="WebView三部曲：代码交互">
 <meta name="twitter:description" content="本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:
-WebView基本用法WebView代码交互WebView性能优化">
+
+WebView三部曲：基本用法 
+WebView三部曲：代码交互 
+WebView三部曲：性能优化">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +68,7 @@ WebView基本用法WebView代码交互WebView性能优化">
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>WebView代码交互 | 郭孝星</title>
+<title>WebView三部曲：代码交互 | 郭孝星</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -264,10 +273,10 @@ WebView基本用法WebView代码交互WebView性能优化">
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-WebView代码交互" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-WebView三部曲：代码交互" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/31/WebView代码交互/" class="article-date">
+      <a href="/2016/07/31/WebView三部曲：代码交互/" class="article-date">
       <time datetime="2016-07-30T16:00:00.000Z" itemprop="datePublished">2016-07-31</time>
 </a>
 
@@ -283,7 +292,7 @@ WebView基本用法WebView代码交互WebView性能优化">
         
   
     <h1 class="article-title" itemprop="name">
-      WebView代码交互
+      WebView三部曲：代码交互
     </h1>
   
 
@@ -301,19 +310,27 @@ WebView基本用法WebView代码交互WebView性能优化">
       
           
         <p>本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:</p>
-<p><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.md" target="_blank" rel="external">WebView基本用法</a><br><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E4%BB%A3%E7%A0%81%E4%BA%A4%E4%BA%92.md" target="_blank" rel="external">WebView代码交互</a><br><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md" target="_blank" rel="external">WebView性能优化</a></p>
+<ul>
+<li><a href="https://github.com/guoxiaoxing/android-hybird-app/blob/master/webview/doc/WebView三部曲：基本用法.md" target="_blank" rel="external">WebView三部曲：基本用法</a> </li>
+<li><a href="https://github.com/guoxiaoxing/android-hybird-app/blob/master/webview/doc/WebView三部曲：代码交互.md" target="_blank" rel="external">WebView三部曲：代码交互</a> </li>
+<li><a href="https://github.com/guoxiaoxing/android-hybird-app/blob/master/webview/doc/WebView三部曲：性能优化.md" target="_blank" rel="external">WebView三部曲：性能优化</a></li>
+</ul>
 <a id="more"></a>
-<h1 id="WebView代码交互"><a href="#WebView代码交互" class="headerlink" title="WebView代码交互"></a>WebView代码交互</h1><p>作者: 郭彦南<br>邮箱: guoyannanv@163.com<br>博客: <a href="https://YannanGuo.github.io/" target="_blank" rel="external">https://YannanGuo.github.io/</a><br>知乎: <a href="https://www.zhihu.com/people/YannanGuo" target="_blank" rel="external">https://www.zhihu.com/people/YannanGuo</a></p>
+<h1 id="WebView三部曲：代码交互"><a href="#WebView三部曲：代码交互" class="headerlink" title="WebView三部曲：代码交互"></a>WebView三部曲：代码交互</h1><p>作者: 郭孝星<br>邮箱: guoxiaoxingse@gmail.com<br>博客: <a href="https://guoxiaoxing.github.io/">https://guoxiaoxing.github.io/</a><br>简书: <a href="http://www.jianshu.com/users/66a47e04215b/latest_articles" target="_blank" rel="external">http://www.jianshu.com/users/66a47e04215b/latest_articles</a></p>
 <p><strong>关于作者</strong></p>
 <blockquote>
-<p>Android Coder一枚, 目前就职于杭州大搜车汽车汽车服务有限公司。爱技术、爱烹饪、爱小提琴、爱一切新鲜有趣的事物。<br>人生格言: 不想当程序员的歌手不是好厨师。</p>
+<p>郭孝星，字仲明，非著名程序员，代码洁癖患者，爱编程，好音乐，喜烹饪，爱一切有趣的事物和人。</p>
 </blockquote>
 <p><strong>关于文章</strong></p>
 <blockquote>
-<p>作者的每一篇文章都会同时发布在Github、CSDN和知乎上, 文章顶部也会附上Github上的文章链接和代码链接。如果文章中有什么疑问欢迎发邮件与<br>我交流, 对于交流的问题, 请描述清楚并附上代码与日志, 我一般都会给予回复。如果文章中有什么错误, 也欢迎斧正。如果你觉得本文章对你<br>有所帮助, 也欢迎去star文章, 关注文章的最新的动态。</p>
+<p>作者的文章都会同时发布在个人博客和简书博客上, 文章顶部也会附上文章的Github链接。如果文章中有什么疑问欢迎发邮件与我交流, 对于交流的问<br>题, 请描述清楚并附上代码与日志, 我一般都会给予回复。如果文章中有什么错误, 也欢迎斧正。如果你觉得本文章对你有所帮助, 也欢迎去star文<br>章, 关注文章的最新的动态。</p>
 </blockquote>
 <p>本系列文章讨论WebView的各种用法以及使用技巧, 一共包含三篇文章:</p>
-<p><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95.md" target="_blank" rel="external">WebView基本用法</a><br><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E4%BB%A3%E7%A0%81%E4%BA%A4%E4%BA%92.md" target="_blank" rel="external">WebView代码交互</a><br><a href="https://github.com/guoxiaoxing/webview-best-practice/blob/master/doc/WebView%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md" target="_blank" rel="external">WebView性能优化</a></p>
+<ul>
+<li><a href="https://github.com/guoxiaoxing/android-hybird-app/blob/master/webview/doc/WebView三部曲：基本用法.md" target="_blank" rel="external">WebView三部曲：基本用法</a> </li>
+<li><a href="https://github.com/guoxiaoxing/android-hybird-app/blob/master/webview/doc/WebView三部曲：代码交互.md" target="_blank" rel="external">WebView三部曲：代码交互</a> </li>
+<li><a href="https://github.com/guoxiaoxing/android-hybird-app/blob/master/webview/doc/WebView三部曲：性能优化.md" target="_blank" rel="external">WebView三部曲：性能优化</a></li>
+</ul>
 <h1 id="一-Android原生方案"><a href="#一-Android原生方案" class="headerlink" title="一 Android原生方案"></a>一 Android原生方案</h1><p>关于WebView中Java代码和JS代码的交互实现, Android给了一套原生的方案, 我们先来看看原生的用法。后面我们还会讲到其他的开源方法。</p>
 <p>JavaScript代码和Android代码是通过addJavascriptInterface()来建立连接的, 我们来看下具体的用法。</p>
 <p>1 设置WebView支持JavaScript</p>
@@ -366,13 +383,13 @@ WebView基本用法WebView代码交互WebView性能优化">
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/07/31/WebView代码交互/">WebView代码交互</a></p>
+        <p><span>本文标题:</span><a href="/2016/07/31/WebView三部曲：代码交互/">WebView三部曲：代码交互</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">郭孝星</a></p>
         <p><span>发布时间:</span>2016-07-31, 00:00:00</p>
-        <p><span>最后更新:</span>2016-08-28, 14:21:50</p>
+        <p><span>最后更新:</span>2016-11-19, 18:08:32</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/07/31/WebView代码交互/" title="WebView代码交互">https://guoxiaoxing.github.io/2016/07/31/WebView代码交互/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://guoxiaoxing.github.io/2016/07/31/WebView代码交互/　　作者: 郭孝星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/07/31/WebView三部曲：代码交互/" title="WebView三部曲：代码交互">https://guoxiaoxing.github.io/2016/07/31/WebView三部曲：代码交互/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://guoxiaoxing.github.io/2016/07/31/WebView三部曲：代码交互/　　作者: 郭孝星" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -386,8 +403,8 @@ WebView基本用法WebView代码交互WebView性能优化">
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/07/31/WebView基本用法/">
-                    WebView基本用法
+                <a href="/2016/07/31/WebView三部曲：性能优化/">
+                    WebView三部曲：代码交互
                 </a>
             </div>
         
@@ -399,7 +416,7 @@ WebView基本用法WebView代码交互WebView性能优化">
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#WebView代码交互"><span class="toc-number">1.</span> <span class="toc-text">WebView代码交互</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一-Android原生方案"><span class="toc-number">2.</span> <span class="toc-text">一 Android原生方案</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-jockeyjs开源方案"><span class="toc-number">3.</span> <span class="toc-text">二 jockeyjs开源方案</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#WebView三部曲：代码交互"><span class="toc-number">1.</span> <span class="toc-text">WebView三部曲：代码交互</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一-Android原生方案"><span class="toc-number">2.</span> <span class="toc-text">一 Android原生方案</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-jockeyjs开源方案"><span class="toc-number">3.</span> <span class="toc-text">二 jockeyjs开源方案</span></a></li></ol>
         
     </div>
     <style>
@@ -435,7 +452,7 @@ WebView基本用法WebView代码交互WebView性能优化">
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"WebView代码交互　| 郭孝星　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"WebView三部曲：代码交互　| 郭孝星　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -451,7 +468,7 @@ WebView基本用法WebView代码交互WebView性能优化">
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2016/07/31/WebView代码交互/" data-title="WebView代码交互" data-url="https://guoxiaoxing.github.io/2016/07/31/WebView代码交互/"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/07/31/WebView三部曲：代码交互/" data-title="WebView三部曲：代码交互" data-url="https://guoxiaoxing.github.io/2016/07/31/WebView三部曲：代码交互/"></div>
     <script>
         var duoshuoQuery = {short_name:"null"};
         var loadComment = function(){
@@ -480,13 +497,13 @@ WebView基本用法WebView代码交互WebView性能优化">
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/07/31/WebView基本用法/" title="下一篇: WebView基本用法">
+            <a href="/2016/07/31/WebView三部曲：性能优化/" title="下一篇: WebView三部曲：代码交互">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView代码交互/">WebView代码交互</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView基本用法/">WebView基本用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView性能优化/">WebView性能优化</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView三部曲：代码交互/">WebView三部曲：代码交互</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView三部曲：性能优化/">WebView三部曲：代码交互</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/31/WebView三部曲：基本用法/">WebView三部曲：代码交互</a></li></ul>
 
 
 
