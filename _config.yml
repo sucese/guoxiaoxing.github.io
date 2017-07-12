@@ -69,4 +69,4 @@ theme: yelee
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: git@github.com:guoxiaoxing/guoxiaoxing.github.io.git
+  repo: https://github.com/guoxiaoxing/guoxiaoxing.github.io.git
